@@ -81,7 +81,7 @@ public class Easy {
                     System.out.println("Сотрудник с максимальной зарплатой: " + findEmployeeWithMaxSalary.getFullName());
                 }
             }
-            public static float calculateAverageSalary() {
+            public static float calculateAverageSalary () {
                 int count = 0;
                 int sum = 0;
                 for (Employee employee : employees) {
