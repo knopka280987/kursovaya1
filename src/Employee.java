@@ -1,5 +1,6 @@
 
 public class Employee {
+    private static int counter = 1;
     private int id;
     private String firstName;
     private String lastName;
@@ -7,8 +8,8 @@ public class Employee {
     private int department;
     private int salary;
 
-    public Employee(int id, String name, String lastName, String middleName, int department, int salary) {
-        this.id = id;
+    public Employee(String name, String lastName, String middleName, int department, int salary) {
+        this.id = counter++;
         this.firstName = name;
         this.lastName = lastName;
         this.middleName = middleName;
@@ -20,33 +21,21 @@ public class Employee {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     public String getMiddleName() {
         return middleName;
     }
 
-    public void setMiddleName(String middleName) {
-        this.middleName = middleName;
-    }
 
     public int getDepartment() {
         return department;
@@ -74,4 +63,3 @@ public class Employee {
                 "Зарплата: '" + salary;
     }
 }
-

@@ -57,7 +57,6 @@ public class Easy {
 
         return (float) sum / employees.length;
     }
-
     public void printFullNames() {
         for (Employee employee : employees) {
             System.out.println(
