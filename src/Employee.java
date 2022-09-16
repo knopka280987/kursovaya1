@@ -74,3 +74,4 @@ public class Employee {
                 "Зарплата: '" + salary;
     }
 }
+
